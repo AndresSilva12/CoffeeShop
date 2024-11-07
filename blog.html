@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blog - CoffeeShop</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="src/css/global.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://kit.fontawesome.com/74fc60c8eb.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navBar p-4 flex flex-col justify-center backdrop-blur-sm bg-white/30 sm:flex-row sm:justify-between">
+            <div class="w-full flex justify-between sm:justify-start">
+                <a href="/index.html">
+                    <i class="fa-solid fa-mug-saucer"></i>
+                    Coffee House
+                </a>
+
+                <button id="navBtn" class="sm:hidden">
+                    <i class="fa-solid fa-bars" id="navBtnIcon"></i>
+                </button>
+            </div>
+            <ul id="navList" class="hidden w-full flex flex-col text-center sm:flex-row sm:justify-end sm:inline-flex">
+                <li>
+                    <a href="/index.html" class="m-2 hover:text-orange-400">Home</a>
+                </li>
+                <li>
+                    <a href="/menu.html" class="m-2 hover:text-orange-400">Menu</a>
+                </li>
+                <li>
+                    <a href="/blog.html" class=" m-2 hover:text-orange-400">Blog</a>
+                </li>
+                <li>
+                    <a href="#about" class=" m-2 hover:text-orange-400">About</a>
+                </li>
+                <li>
+                    <a href="#shop" class=" m-2 hover:text-orange-400">Shop</a>
+                </li>
+                <li>
+                    <a href="/contact.html" class="m-2 hover:text-orange-400">Contact</a>
+                </li>
+                <li>
+                    <a href="#cart" class="ml-2 hover:text-orange-400">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="h-screen pt-20 hero7 bg-center bg-cover bg-no-repeat">
+            <div class="grid grid-rows-4 gap-4 p-4">
+                <article class="row-4 bg-gray-200 text-black w-2/4 h-auto p-4 rounded flex">
+                    <img src="/src/img/client1.jpg" class="w-44 h-28 rounded-full">
+                    <div class="flex flex-col p-4">
+                        <h3 class="text-2xl">User1</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias ab explicabo distinctio velit laborum recusandae.</p>
+                    </div>
+                </article>
+                <article class="row-4 bg-gray-200 text-black w-2/4 h-auto p-4 rounded flex">
+                    <img src="/src/img/client1.jpg" class="w-44 h-28 rounded-full">
+                    <div class="flex flex-col p-4">
+                        <h3 class="text-2xl">User1</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias ab explicabo distinctio velit laborum recusandae.</p>
+                    </div>
+                </article>
+                <article class="row-4 bg-gray-200 text-black w-2/4 h-auto p-4 rounded flex">
+                    <img src="/src/img/client1.jpg" class="w-44 h-28 rounded-full">
+                    <div class="flex flex-col p-4">
+                        <h3 class="text-2xl">User1</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias ab explicabo distinctio velit laborum recusandae.</p>
+                    </div>
+                </article>
+                <article class="row-4 bg-gray-200 text-black w-2/4 h-auto p-4 rounded flex">
+                    <img src="/src/img/client1.jpg" class="w-44 h-28 rounded-full">
+                    <div class="flex flex-col p-4">
+                        <h3 class="text-2xl">User1</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias ab explicabo distinctio velit laborum recusandae.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
