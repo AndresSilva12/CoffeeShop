@@ -1,0 +1,19 @@
+body{
+    background-color: dimgray;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    background-image: url(/src/img/image1.jpg);
+}
+
+.menu{
+    background-image: url(/src/img/image2.jpg);
+}
+
+.contact{
+    background-image: url(/src/img/image8.jpg);
+}
