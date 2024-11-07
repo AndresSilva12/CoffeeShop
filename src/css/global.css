@@ -31,12 +31,13 @@ body{
 }
 
 .navBar{
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 40;
     width: 100%;
     margin: 0;
 }
+
 
 .slide-btn {
     position: absolute;

@@ -11,24 +11,42 @@
 
     <body>
 
-        <nav class="navBar p-4 flex justify-between backdrop-blur-sm bg-white/30 ">
-            <div>
-                <a href="#">
+        <nav class="navBar p-4 flex flex-col justify-center backdrop-blur-sm bg-white/30 sm:flex-row sm:justify-between">
+            <div class="w-full flex justify-between sm:justify-start">
+                <a href="/index.html">
                     <i class="fa-solid fa-mug-saucer"></i>
                     Coffee House
                 </a>
+
+                <button id="navBtn" class="sm:hidden">
+                    <i class="fa-solid fa-bars" id="navBtnIcon"></i>
+                </button>
             </div>
-            <div>
-                <a href="/index.html" class="m-2 hover:text-orange-400">Home</a>
-                <a href="/menu.html" class="m-2 hover:text-orange-400">Menu</a>
-                <a href="#blog" class="m-2 hover:text-orange-400">Blog</a>
-                <a href="#about" class="m-2 hover:text-orange-400">About</a>
-                <a href="#shop" class="m-2 hover:text-orange-400">Shop</a>
-                <a href="/contact.html" class="m-2 hover:text-orange-400">Contact</a>
-                <a href="#cart" class="ml-2 hover:text-orange-400">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </a>
-            </div>
+            <ul id="navList" class="hidden w-full flex flex-col text-center sm:flex-row sm:justify-end sm:inline-flex">
+                <li>
+                    <a href="/index.html" class="m-2 hover:text-orange-400">Home</a>
+                </li>
+                <li>
+                    <a href="/menu.html" class="m-2 hover:text-orange-400">Menu</a>
+                </li>
+                <li>
+                    <a href="#blog" class=" m-2 hover:text-orange-400">Blog</a>
+                </li>
+                <li>
+                    <a href="#about" class=" m-2 hover:text-orange-400">About</a>
+                </li>
+                <li>
+                    <a href="#shop" class=" m-2 hover:text-orange-400">Shop</a>
+                </li>
+                <li>
+                    <a href="/contact.html" class="m-2 hover:text-orange-400">Contact</a>
+                </li>
+                <li>
+                    <a href="#cart" class="ml-2 hover:text-orange-400">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </li>
+            </ul>
         </nav>
 
         <div class="overflow-hidden">
@@ -39,32 +57,32 @@
             <div class="hero-list flex flex-row flex-nowrap">
 
                 <div class="hero bg-no-repeat bg-cover bg-center w-screen h-screen shrink-0">
-                    <div class="mt-14 h-3/4 m-auto flex flex-col items-center justify-center">
+                    <div class="mt-28 h-3/4 m-auto flex flex-col items-center justify-center">
                         <img src="/src/img/welcome.png" alt="welcome" class="h-14">
-                        <h1 class="text-8xl text-center m-auto flex items-center justify-center">
+                        <h1 class="text-7xl sm:text-8xl text-center m-auto flex items-center justify-center">
                             AMAZING TASTE &<br>
                             BEAUTIFUL PLACE
                         </h1>        
                         <p class="w-96">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus alias rem repellat vitae amet recusandae officia nulla. Quis, quae iusto.</p>
                         <div class="flex">
-                            <button class="m-1 p-4 bg-orange-400 text-black">Order Now</button>
-                            <button class="m-1 p-4 border">View Menu</button>
+                            <a href="#" class="m-1 p-4 bg-orange-400 text-black content-center">Order Now</a>
+                            <a href="/menu.html" class="m-1 p-4 border">View Menu</a>
                         </div>
                     </div>
                 </div>
             
 
                 <div class="hero2 bg-no-repeat bg-cover	bg-center w-screen h-screen shrink-0">                
-                    <div class="mt-14 h-3/4 m-auto flex flex-col items-center justify-center">
+                    <div class="mt-28 h-3/4 m-auto flex flex-col items-center justify-center">
                         <img src="/src/img/welcome.png" alt="welcome" class="h-14">
-                        <h1 class="text-8xl text-center m-auto flex items-center justify-center">
+                        <h1 class="text-7xl sm:text-8xl text-center m-auto flex items-center justify-center">
                             THE BEST &<br>
                             MUST POPULAR COFFEE
                         </h1>        
                         <p class="w-96">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus alias rem repellat vitae amet recusandae officia nulla. Quis, quae iusto.</p>
                         <div class="flex">
-                            <button class="m-1 p-4 bg-orange-400 text-black">Order Now</button>
-                            <button class="m-1 p-4 border">View Menu</button>
+                            <a href="#" class="m-1 p-4 bg-orange-400 text-black content-center">Order Now</a>
+                            <a href="/menu.html" class="m-1 p-4 border">View Menu</a>
                         </div>
                     </div>
                 </div>
@@ -89,7 +107,9 @@
             </div>
 
             <div class="flex flex-col p-4">
-                <a href="">
+                <a href="https://www.google.com/maps/dir//1063+Morse+Avenue,+Sunnyvale,+CA+94089/@37.4008594,-122.0997848,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x808fb7b591ae76ff:0x5a75f49c25487430!2m2!1d-122.0173838!2d37.400888?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank"
+                >
                     <i class="fa-solid fa-location-dot text-orange-400"></i>
                     <p>123 Main Street</p>
                 </a>
@@ -107,6 +127,7 @@
         </footer>
         <div class="bg-orange-400 w-full h-4"> </div>
 
+        <script src="slide.js"></script>
         <script src="main.js"></script>
     </body>
 </html>

@@ -9,28 +9,46 @@
     </head>
     <body>
         <div class="contact h-screen bg-no-repeat bg-center bg-cover">
-            <nav class="p-4 flex justify-between backdrop-blur-sm bg-white/30 ">
-                <div>
-                    <a href="#">
+            <nav class="navBar p-4 flex flex-col justify-center backdrop-blur-sm bg-white/30 sm:flex-row sm:justify-between">
+                <div class="w-full flex justify-between sm:justify-start">
+                    <a href="/index.html">
                         <i class="fa-solid fa-mug-saucer"></i>
                         Coffee House
                     </a>
+    
+                    <button id="navBtn" class="sm:hidden">
+                        <i class="fa-solid fa-bars" id="navBtnIcon"></i>
+                    </button>
                 </div>
-                <div>
-                    <a href="/index.html" class="m-2 hover:text-orange-400">Home</a>
-                    <a href="/menu.html" class="m-2 hover:text-orange-400">Menu</a>
-                    <a href="#blog" class="m-2 hover:text-orange-400">Blog</a>
-                    <a href="#about" class="m-2 hover:text-orange-400">About</a>
-                    <a href="#shop" class="m-2 hover:text-orange-400">Shop</a>
-                    <a href="/contact.html" class="m-2 hover:text-orange-400">Contact</a>
-                    <a href="#cart" class="ml-2 hover:text-orange-400">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </a>
-                </div>
+                <ul id="navList" class="hidden w-full flex flex-col text-center sm:flex-row sm:justify-end sm:inline-flex">
+                    <li>
+                        <a href="/index.html" class="m-2 hover:text-orange-400">Home</a>
+                    </li>
+                    <li>
+                        <a href="/menu.html" class="m-2 hover:text-orange-400">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#blog" class=" m-2 hover:text-orange-400">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#about" class=" m-2 hover:text-orange-400">About</a>
+                    </li>
+                    <li>
+                        <a href="#shop" class=" m-2 hover:text-orange-400">Shop</a>
+                    </li>
+                    <li>
+                        <a href="/contact.html" class="m-2 hover:text-orange-400">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#cart" class="ml-2 hover:text-orange-400">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </li>
+                </ul>
             </nav>
 
-            <div class="h-96 flex justify-center mt-14">
-                <form action="" class="bg-white text-black w-96 rounded">
+            <div class="h-3/4 flex justify-center pt-28">
+                <form action="" class="h-full bg-white text-black w-96 rounded shadow-black shadow-inner">
                     <h2 class="mt-4 text-center font-bold">Contactanos!</h2>
                     <div class="m-4 flex flex-col">
                         <label for="name">Nombre:</label>
@@ -61,6 +79,7 @@
             </div>
         </div>
 
-        <script src="/main.js"></script>
+        <script src="main.js"></script>
+        <script src="/form.js"></script>
     </body>
 </html>
