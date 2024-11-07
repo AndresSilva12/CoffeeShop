@@ -31,24 +31,36 @@
 
             <div class="h-96 flex justify-center mt-14">
                 <form action="" class="bg-white text-black w-96 rounded">
-                    <div>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" name="nombre" id="nombreInput" placeholder="nombre..." class="border">
+                    <h2 class="mt-4 text-center font-bold">Contactanos!</h2>
+                    <div class="m-4 flex flex-col">
+                        <label for="name">Nombre:</label>
+                        <input type="text" name="nombre" placeholder="nombre..." class="border">
                     </div>
-                    <div>
+                    <div class="m-4 flex flex-col">
                         <label for="apellido">Apellido:</label>
-                        <input type="text" name="apellido" id="apellidoInput" placeholder="apellido..." class="border">
+                        <input type="text" name="apellido" placeholder="apellido..." class="border">
                     </div>
-                    <div>
-                        <label for="direccion">Direccion:</label>
-                        <input type="text" name="direccion" id="direccionInput" placeholder="direccion..." class="border">
+                    <div class="m-4 flex flex-col">
+                        <label for="direccion">Email:</label>
+                        <input type="email" name="email" placeholder="email.." class="border">
                     </div>
-                    <div>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" name="nombre" id="nombreInput" placeholder="nombre..." class="border">
+                    <div class="m-4 flex flex-col">
+                        <label for="mensaje">Mensaje:</label>
+                        <input type="text" name="mensaje" placeholder="mensaje..." class="border">
                     </div>
+
+                    <button
+                        id="buttonSubmit"
+                        type="submit"
+                        class="flex m-auto justify-center bg-orange-400 text-white p-3 rounded"
+                    >
+                        Submit
+                    </button>
+                    
                 </form>
             </div>
         </div>
+
+        <script src="/main.js"></script>
     </body>
 </html>

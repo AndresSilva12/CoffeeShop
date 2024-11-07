@@ -10,41 +10,74 @@
     </head>
 
     <body>
-        <div class="hero h-screen bg-no-repeat bg-cover	bg-center">
 
-            <nav class="p-4 flex justify-between backdrop-blur-sm bg-white/30 ">
-                <div>
-                    <a href="#">
-                        <i class="fa-solid fa-mug-saucer"></i>
-                        Coffee House
-                    </a>
-                </div>
-                <div>
-                    <a href="/index.html" class="m-2 hover:text-orange-400">Home</a>
-                    <a href="/menu.html" class="m-2 hover:text-orange-400">Menu</a>
-                    <a href="#blog" class="m-2 hover:text-orange-400">Blog</a>
-                    <a href="#about" class="m-2 hover:text-orange-400">About</a>
-                    <a href="#shop" class="m-2 hover:text-orange-400">Shop</a>
-                    <a href="/contact.html" class="m-2 hover:text-orange-400">Contact</a>
-                    <a href="#cart" class="ml-2 hover:text-orange-400">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </a>
-                </div>
-            </nav>
-            
-            <div class="mt-14 h-3/4 m-auto flex flex-col items-center justify-center">
-                <img src="/src/img/welcome.png" alt="welcome" class="h-14">
-                <h1 class="text-8xl text-center m-auto flex items-center justify-center">
-                    AMAZING TASTE &<br>
-                    BEAUTIFUL PLACE
-                </h1>        
-                <p class="w-96">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus alias rem repellat vitae amet recusandae officia nulla. Quis, quae iusto.</p>
-                <div class="flex">
-                    <button class="m-1 p-4 bg-orange-400 text-black">Order Now</button>
-                    <button class="m-1 p-4 border">View Menu</button>
-                </div>
+        <nav class="navBar p-4 flex justify-between backdrop-blur-sm bg-white/30 ">
+            <div>
+                <a href="#">
+                    <i class="fa-solid fa-mug-saucer"></i>
+                    Coffee House
+                </a>
             </div>
+            <div>
+                <a href="/index.html" class="m-2 hover:text-orange-400">Home</a>
+                <a href="/menu.html" class="m-2 hover:text-orange-400">Menu</a>
+                <a href="#blog" class="m-2 hover:text-orange-400">Blog</a>
+                <a href="#about" class="m-2 hover:text-orange-400">About</a>
+                <a href="#shop" class="m-2 hover:text-orange-400">Shop</a>
+                <a href="/contact.html" class="m-2 hover:text-orange-400">Contact</a>
+                <a href="#cart" class="ml-2 hover:text-orange-400">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </div>
+        </nav>
+
+        <div class="overflow-hidden">
+            <button class="slide-btn prev backdrop-blur-sm bg-white/20">
+                <
+            </button>
+
+            <div class="hero-list flex flex-row flex-nowrap">
+
+                <div class="hero bg-no-repeat bg-cover bg-center w-screen h-screen shrink-0">
+                    <div class="mt-14 h-3/4 m-auto flex flex-col items-center justify-center">
+                        <img src="/src/img/welcome.png" alt="welcome" class="h-14">
+                        <h1 class="text-8xl text-center m-auto flex items-center justify-center">
+                            AMAZING TASTE &<br>
+                            BEAUTIFUL PLACE
+                        </h1>        
+                        <p class="w-96">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus alias rem repellat vitae amet recusandae officia nulla. Quis, quae iusto.</p>
+                        <div class="flex">
+                            <button class="m-1 p-4 bg-orange-400 text-black">Order Now</button>
+                            <button class="m-1 p-4 border">View Menu</button>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="hero2 bg-no-repeat bg-cover	bg-center w-screen h-screen shrink-0">                
+                    <div class="mt-14 h-3/4 m-auto flex flex-col items-center justify-center">
+                        <img src="/src/img/welcome.png" alt="welcome" class="h-14">
+                        <h1 class="text-8xl text-center m-auto flex items-center justify-center">
+                            THE BEST &<br>
+                            MUST POPULAR COFFEE
+                        </h1>        
+                        <p class="w-96">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus alias rem repellat vitae amet recusandae officia nulla. Quis, quae iusto.</p>
+                        <div class="flex">
+                            <button class="m-1 p-4 bg-orange-400 text-black">Order Now</button>
+                            <button class="m-1 p-4 border">View Menu</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <button class="slide-btn next backdrop-blur-sm bg-white/20">
+                >
+            </button>
         </div>
+
+
             
         <footer class="bg-black flex">
             <div class="flex flex-col p-4">
@@ -73,5 +106,7 @@
 
         </footer>
         <div class="bg-orange-400 w-full h-4"> </div>
+
+        <script src="main.js"></script>
     </body>
 </html>
