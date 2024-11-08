@@ -30,24 +30,33 @@
                     <a href="/menu.html" class="m-2 hover:text-orange-400">Menu</a>
                 </li>
                 <li>
-                    <a href="#blog" class=" m-2 hover:text-orange-400">Blog</a>
-                </li>
-                <li>
-                    <a href="#about" class=" m-2 hover:text-orange-400">About</a>
-                </li>
-                <li>
-                    <a href="#shop" class=" m-2 hover:text-orange-400">Shop</a>
-                </li>
-                <li>
                     <a href="/contact.html" class="m-2 hover:text-orange-400">Contact</a>
                 </li>
                 <li>
-                    <a href="#cart" class="ml-2 hover:text-orange-400">
+                    <a href="#cart" class="ml-2 hover:text-orange-400" id="carritoBtnAbrir">
                         <i class="fa-solid fa-cart-shopping"></i>
                     </a>
                 </li>
             </ul>
         </nav>
+
+        <div id="carritoMenu" class="hidden carrito backdrop-blur-sm bg-white/30 flex flex-col items-end">
+            <button id="carritoBtnCerrar" class="text-3xl p-2 hover:text-orange-400">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="m-2 max-w-72 grid grid-cols-1 gap-2">
+                <article class="col-1 rounded bg-gray-200 text-black p-4 flex flex-col  shadow-black shadow-inner">
+                    <h3 class="font-bold">Black Coffee</h3>
+                    <img src="/src/img/image7.jpg" class="">
+                    <p>Price: $200</p>
+                </article>
+                <article class="col-1 rounded bg-gray-200 text-black p-4 flex flex-col  shadow-black shadow-inner">
+                    <h3 class="font-bold">Black Coffee</h3>
+                    <img src="/src/img/image7.jpg" class="">
+                    <p>Price: $200</p>
+                </article>
+            </div>
+        </div>
 
         <div class="overflow-hidden">
             <button class="slide-btn prev backdrop-blur-sm bg-white/20">

@@ -27,40 +27,78 @@
                     <a href="/menu.html" class="m-2 hover:text-orange-400">Menu</a>
                 </li>
                 <li>
-                    <a href="#blog" class=" m-2 hover:text-orange-400">Blog</a>
-                </li>
-                <li>
-                    <a href="#about" class=" m-2 hover:text-orange-400">About</a>
-                </li>
-                <li>
-                    <a href="#shop" class=" m-2 hover:text-orange-400">Shop</a>
-                </li>
-                <li>
                     <a href="/contact.html" class="m-2 hover:text-orange-400">Contact</a>
                 </li>
                 <li>
-                    <a href="#cart" class="ml-2 hover:text-orange-400">
+                    <a href="#cart" class="ml-2 hover:text-orange-400" id="carritoBtnAbrir">
                         <i class="fa-solid fa-cart-shopping"></i>
                     </a>
                 </li>
             </ul>
         </nav>
-        <div class="menu h-full bg-repeat pb-10 bg-cover bg-center">
+
+        <div id="carritoMenu" class="hidden carrito backdrop-blur-sm bg-white/30 flex flex-col items-end">
+            <button id="carritoBtnCerrar" class="text-3xl p-2 hover:text-orange-400">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="m-2 max-w-72 grid grid-cols-1 gap-2">
+                <article class="col-1 rounded bg-gray-200 text-black p-4 flex flex-col  shadow-black shadow-inner">
+                    <h3 class="font-bold">Black Coffee</h3>
+                    <img src="/src/img/image7.jpg" class="">
+                    <p>Price: $200</p>
+                </article>
+                <article class="col-1 rounded bg-gray-200 text-black p-4 flex flex-col  shadow-black shadow-inner">
+                    <h3 class="font-bold">Black Coffee</h3>
+                    <img src="/src/img/image7.jpg" class="">
+                    <p>Price: $200</p>
+                </article>
+            </div>
+        </div>
+
+        <section id="ventanaModal" class="hidden modal h-screen w-screen">
+            <div class="modalContainer w-2/4 m-auto bg-gray-200 rounded text-black p-4">
+                <div class="mt-4 flex  flex-col justify-between items-center">
+                    <h1 class="h-full flex font-bold">Aviso</h1>
+                    <p>El producto se agregó correctamente a tú carrito!</p>
+                </div>
+                <div class="mt-8 flex flex-col w-full items-end">
+                    <button class="modalBtnCerrar w-1/4 text-1xl text-white p-2 bg-orange-400">
+                        Aceptar
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <div class="menu h-full bg-repeat pb-44 bg-cover bg-center">
             <h2 class="pt-20 font-bold text-2xl text-center">Menu</h2>
-            <section class="bg-gray-300 rounded h-full grid grid-cols-1 gap-4 p-6 m-10">
+            <section class="bg-gray-300 rounded h-full grid gap-4 p-6 m-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
                 <article class="col-1 rounded bg-gray-200 text-black p-4 flex flex-col  shadow-black shadow-inner">
                     <h3 class="font-bold">Black Coffee</h3>
                     <img src="/src/img/image7.jpg" class="">
                     <p>Price: $200</p>
                     <p>Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, saepe.</p>
-                    <button class="bg-orange-400 rounded shadow-black shadow-2xl hover:text-white">Add to Cart</button>
+                    <button class="addCarritoBtn bg-orange-400 rounded shadow-black shadow-2xl hover:text-white">Add to Cart</button>
                 </article>
                 <article class="col-1 rounded bg-gray-200 text-black p-4 flex flex-col  shadow-black shadow-inner">
                     <h3 class="font-bold">Black Coffee</h3>
                     <img src="/src/img/image7.jpg" class="">
                     <p>Price: $200</p>
                     <p>Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, saepe.</p>
-                    <button class="bg-orange-400 rounded shadow-black shadow-2xl hover:text-white">Add to Cart</button>
+                    <button class="addCarritoBtn bg-orange-400 rounded shadow-black shadow-2xl hover:text-white">Add to Cart</button>
+                </article>
+                <article class="col-1 rounded bg-gray-200 text-black p-4 flex flex-col  shadow-black shadow-inner">
+                    <h3 class="font-bold">Black Coffee</h3>
+                    <img src="/src/img/image7.jpg" class="">
+                    <p>Price: $200</p>
+                    <p>Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, saepe.</p>
+                    <button class="addCarritoBtn bg-orange-400 rounded shadow-black shadow-2xl hover:text-white">Add to Cart</button>
+                </article>
+                <article class="col-1 rounded bg-gray-200 text-black p-4 flex flex-col  shadow-black shadow-inner">
+                    <h3 class="font-bold">Black Coffee</h3>
+                    <img src="/src/img/image7.jpg" class="">
+                    <p>Price: $200</p>
+                    <p>Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, saepe.</p>
+                    <button class="addCarritoBtn bg-orange-400 rounded shadow-black shadow-2xl hover:text-white">Add to Cart</button>
                 </article>
                 
             </section>

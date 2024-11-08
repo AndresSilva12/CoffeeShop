@@ -14,3 +14,36 @@ navBtn.addEventListener('click', () => {
         // navBtnIcon.classList.replace('fa-bars', 'fa-bars-staggered')
     }
 } )
+
+const carritoBtnAbrir = document.getElementById('carritoBtnAbrir')
+const carritoBtnCerrar = document.getElementById('carritoBtnCerrar')
+const carritoMenu = document.getElementById('carritoMenu')
+
+function desplegarCarrito() {
+    carritoMenu.classList.toggle('hidden')
+    if (!navList.classList.contains('hidden')){
+        navList.classList.toggle('hidden')
+    }
+}
+
+carritoBtnAbrir.addEventListener('click', desplegarCarrito)
+carritoBtnCerrar.addEventListener('click', desplegarCarrito)
+
+
+const botones = document.querySelectorAll('.addCarritoBtn')
+const cerrarCarritoBtn = document.querySelectorAll('.modalBtnCerrar')
+const mensajeVentanaModal = document.getElementById('ventanaModal')
+
+function mostrarModal() {
+    mensajeVentanaModal.classList.toggle('hidden')
+}
+
+// addCarritoBtn.addEventListener('click', mostrarModal)
+
+botones.forEach(boton => {
+    boton.addEventListener('click', mostrarModal)
+})
+
+cerrarCarritoBtn.forEach(botonCerrar => {
+    botonCerrar.addEventListener('click', mostrarModal)
+})

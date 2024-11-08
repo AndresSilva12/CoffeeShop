@@ -8,45 +8,54 @@
         <script src="https://kit.fontawesome.com/74fc60c8eb.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="contact h-screen bg-no-repeat bg-center bg-cover">
-            <nav class="navBar p-4 flex flex-col justify-center backdrop-blur-sm bg-white/30 sm:flex-row sm:justify-between">
-                <div class="w-full flex justify-between sm:justify-start">
-                    <a href="/index.html">
-                        <i class="fa-solid fa-mug-saucer"></i>
-                        Coffee House
-                    </a>
-    
-                    <button id="navBtn" class="sm:hidden">
-                        <i class="fa-solid fa-bars" id="navBtnIcon"></i>
-                    </button>
-                </div>
-                <ul id="navList" class="hidden w-full flex flex-col text-center sm:flex-row sm:justify-end sm:inline-flex">
-                    <li>
-                        <a href="/index.html" class="m-2 hover:text-orange-400">Home</a>
-                    </li>
-                    <li>
-                        <a href="/menu.html" class="m-2 hover:text-orange-400">Menu</a>
-                    </li>
-                    <li>
-                        <a href="#blog" class=" m-2 hover:text-orange-400">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#about" class=" m-2 hover:text-orange-400">About</a>
-                    </li>
-                    <li>
-                        <a href="#shop" class=" m-2 hover:text-orange-400">Shop</a>
-                    </li>
-                    <li>
-                        <a href="/contact.html" class="m-2 hover:text-orange-400">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#cart" class="ml-2 hover:text-orange-400">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+        <nav class="navBar p-4 flex flex-col justify-center backdrop-blur-sm bg-white/30 sm:flex-row sm:justify-between">
+            <div class="w-full flex justify-between sm:justify-start">
+                <a href="/index.html">
+                    <i class="fa-solid fa-mug-saucer"></i>
+                    Coffee House
+                </a>
 
+                <button id="navBtn" class="sm:hidden">
+                    <i class="fa-solid fa-bars" id="navBtnIcon"></i>
+                </button>
+            </div>
+            <ul id="navList" class="hidden w-full flex flex-col text-center sm:flex-row sm:justify-end sm:inline-flex">
+                <li>
+                    <a href="/index.html" class="m-2 hover:text-orange-400">Home</a>
+                </li>
+                <li>
+                    <a href="/menu.html" class="m-2 hover:text-orange-400">Menu</a>
+                </li>
+                <li>
+                    <a href="/contact.html" class="m-2 hover:text-orange-400">Contact</a>
+                </li>
+                <li>
+                    <a href="#cart" class="ml-2 hover:text-orange-400" id="carritoBtnAbrir">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="carritoMenu" class="hidden carrito backdrop-blur-sm bg-white/30 flex flex-col items-end">
+            <button id="carritoBtnCerrar" class="text-3xl p-2 hover:text-orange-400">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="m-2 max-w-72 grid grid-cols-1 gap-2">
+                <article class="col-1 rounded bg-gray-200 text-black p-4 flex flex-col  shadow-black shadow-inner">
+                    <h3 class="font-bold">Black Coffee</h3>
+                    <img src="/src/img/image7.jpg" class="">
+                    <p>Price: $200</p>
+                </article>
+                <article class="col-1 rounded bg-gray-200 text-black p-4 flex flex-col  shadow-black shadow-inner">
+                    <h3 class="font-bold">Black Coffee</h3>
+                    <img src="/src/img/image7.jpg" class="">
+                    <p>Price: $200</p>
+                </article>
+            </div>
+        </div>
+
+        <div class="contact h-screen bg-no-repeat bg-center bg-cover">
             <div class="h-3/4 flex justify-center pt-28">
                 <form action="" class="h-full bg-white text-black w-96 rounded shadow-black shadow-inner">
                     <h2 class="mt-4 text-center font-bold">Contactanos!</h2>
